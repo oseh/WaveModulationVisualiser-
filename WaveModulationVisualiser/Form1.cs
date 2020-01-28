@@ -53,6 +53,11 @@ namespace ScottPlotMicrophoneFFT
             scottPlotUC2.fig.labelY = "Power (raw)";
             scottPlotUC2.fig.labelX = "Frequency (KHz)";
             scottPlotUC2.Redraw();
+
+            scottPlotUC3.fig.labelTitle = "Demodulation";
+            scottPlotUC3.fig.labelY = "Power (raw)";
+            scottPlotUC3.fig.labelX = "Frequency (KHz)";
+            scottPlotUC3.Redraw();
         }
 
         public void StartListeningToMicrophone(int audioDeviceNumber = 0)

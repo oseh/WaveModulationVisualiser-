@@ -34,6 +34,7 @@ namespace ScottPlotMicrophoneFFT
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.scottPlotUC1 = new ScottPlot.ScottPlotUC();
             this.scottPlotUC2 = new ScottPlot.ScottPlotUC();
+            this.scottPlotUC3 = new ScottPlot.ScottPlotUC();
             this.timerReplot = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
@@ -58,6 +59,8 @@ namespace ScottPlotMicrophoneFFT
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.scottPlotUC1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.scottPlotUC2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.scottPlotUC3, 0, 2);
+
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -87,6 +90,15 @@ namespace ScottPlotMicrophoneFFT
             this.scottPlotUC2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 31);
             this.scottPlotUC2.Size = new System.Drawing.Size(1362, 511);
             this.scottPlotUC2.TabIndex = 1;
+            // 
+            // scottPlotUC3
+            // 
+            this.scottPlotUC3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scottPlotUC3.Location = new System.Drawing.Point(3, 1000);
+            this.scottPlotUC3.Name = "scottPlotUC3";
+            this.scottPlotUC3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 31);
+            this.scottPlotUC3.Size = new System.Drawing.Size(1362, 511);
+            this.scottPlotUC3.TabIndex = 2;
             // 
             // timerReplot
             // 
@@ -209,6 +221,7 @@ namespace ScottPlotMicrophoneFFT
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private ScottPlot.ScottPlotUC scottPlotUC1;
         private ScottPlot.ScottPlotUC scottPlotUC2;
+        private ScottPlot.ScottPlotUC scottPlotUC3;
         private System.Windows.Forms.Timer timerReplot;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;
